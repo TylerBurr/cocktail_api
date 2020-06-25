@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Post = require('../models/CocktailDB');
 
-
 router.post('/', (req, res) => {
     const post = new Post({
         strDrink: req.body.strDrink,
@@ -16,7 +15,5 @@ router.post('/', (req, res) => {
         res.json(err)
     })
 })
-
-
 
 module.exports = router;

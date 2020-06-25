@@ -160,8 +160,4 @@ const PostSchema = mongoose.Schema({
     },
 })
 
-
-
-strMeasure1
-
 module.exports = mongoose.model('cocktail_db', PostSchema)

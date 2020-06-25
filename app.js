@@ -6,7 +6,6 @@ require('dotenv').config()
 
 const port = 3000
 
-
 app.use(bodyParser.json())
 
 mongoose.connect(process.env.DB_CONNECTION,{ useUnifiedTopology: true, useNewUrlParser: true}),() => {
@@ -14,7 +13,7 @@ mongoose.connect(process.env.DB_CONNECTION,{ useUnifiedTopology: true, useNewUrl
 };
 
 // Import Routes
-const postRoute = require('./routes/post');
+//const postRoute = require('./routes/post');
 const cocktailFind = require('./routes/cocktail_db_get');
 
 //app.use('/posts', postRoute)
